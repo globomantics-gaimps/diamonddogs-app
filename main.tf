@@ -1,22 +1,22 @@
-# terraform {
-#   required_providers {
-#     aws = {
-#       source  = "hashicorp/aws"
-#       version = "~>3.0"
-#     }
-#   }
-# }
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~>3.0"
+    }
+  }
+}
 
-# provider "aws" {
-#   region = var.region
-#   default_tags {
-#     tags = {
-#       Owner       = "Globomantics"
-#       Project     = var.project
-#       Environment = var.environment
-#     }
-#   }
-# }
+provider "aws" {
+  region = var.region
+  default_tags {
+    tags = {
+      Owner       = "Globomantics"
+      Project     = var.project
+      Environment = var.environment
+    }
+  }
+}
 
 
 # resource "aws_vpc" "diamond_dogs" {
