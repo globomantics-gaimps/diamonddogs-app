@@ -8,6 +8,11 @@ variable "project" {
   description = "(Required) Application project name."
 }
 
+variable "billable" {
+  type        = string
+  description = "(Required) Application billable number."
+}
+
 variable "environment" {
   type        = string
   description = "(Optional) Application environment for deployment, defaults to development."
